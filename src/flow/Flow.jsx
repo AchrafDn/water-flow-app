@@ -114,8 +114,6 @@ const initialNodes = [
     data: { label: 'Bac Eau MC', leftNumber: 12, rightNumber: 22, progress: 60, size: 'small' },
     draggable: false,
     connectable: false,
-    width: 150,
-    height: 100,
   },
     {
     id: '4',
@@ -124,8 +122,6 @@ const initialNodes = [
     data: { label: 'Bac Eau MP1', leftNumber: 10, rightNumber: 20, progress: 40, size: 'medium' },
     draggable: false,
     connectable: false,
-    width: 150,
-    height: 100,
   },
   
   // 👉 Node below Link1 (spaced)
@@ -136,8 +132,6 @@ const initialNodes = [
     data: { label: 'Bac Eau MP2', leftNumber: 5, rightNumber: 15, progress: 30, size: 'large' },
     draggable: false,
     connectable: false,
-    width: 150,
-    height: 100,
   }
 ];
 
@@ -148,8 +142,6 @@ const initialEdges = [
         target: '2',
         animated: true,
         style: { stroke: '#2563eb', strokeWidth: 2 },
-        width: 150,
-        height: 100,
     },
     {
         id: 'e2-3',
@@ -157,8 +149,6 @@ const initialEdges = [
         target: '3',
         animated: true,
         style: { stroke: '#2563eb', strokeWidth: 2 },
-        width: 150,
-        height: 100,
     },
     // Right output of Link1
   { id: 'e3-4', source: '3', target: '4', sourceHandle: 'right', animated: true, style: { stroke: '#2563eb', strokeWidth: 2 }},
