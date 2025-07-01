@@ -1,0 +1,92 @@
+/* StockEauDeslt.css */
+
+.stock-eau-deslt-node {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 120px;
+    padding: 6px 16px;
+    background: white;
+    border: 2px solid #7F8185;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+    user-select: none;
+}
+
+.stock-eau-deslt-node:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.stock-eau-deslt-node .node-label {
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+    text-align: center;
+    line-height: 1.2;
+}
+
+.stock-eau-deslt-node .node-icon {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 10px;
+    object-fit: contain;
+}
+
+.stock-eau-deslt-node .node-values {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.stock-eau-deslt-node .node-value {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2px;
+    font-size: 13px;
+    font-weight: 600;
+}
+
+.stock-eau-deslt-node .value-number {
+    color: #2563eb;
+}
+
+.stock-eau-deslt-node .value-unit {
+    color: #6b7280;
+    font-size: 11px;
+    font-weight: 400;
+}
+
+/* Color variations for different value types */
+.stock-eau-deslt-node .node-value.primary .value-number {
+    color: #FF6602;
+}
+
+.stock-eau-deslt-node .node-value.secondary .value-number {
+    color: #2563eb;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .stock-eau-deslt-node {
+        width: 100px;
+        padding: 10px 12px;
+    }
+    
+    .stock-eau-deslt-node .node-icon {
+        width: 50px;
+        height: 50px;
+    }
+    
+    .stock-eau-deslt-node .node-label {
+        font-size: 12px;
+    }
+    
+    .stock-eau-deslt-node .node-value {
+        font-size: 12px;
+    }
+}

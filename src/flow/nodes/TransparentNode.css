@@ -1,0 +1,25 @@
+.transparent-node {
+    background: transparent;
+    border: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: poppins;
+    user-select: none;
+    width: 100%; /* make node expand if needed */
+}
+
+.number-box {
+    width: 100%;
+    text-align: center;
+    font-size: 14px;
+    border-radius: 6px;
+    padding: 6px 10px;
+    margin: 2px 0;
+}
+
+.number-box.orange {
+    background-color: #A9FFFF; /* light orange background */
+    color: #4E90F0;            /* orange text */
+}

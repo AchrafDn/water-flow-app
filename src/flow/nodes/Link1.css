@@ -1,0 +1,38 @@
+.link1-node {
+    width: 20px;
+    height: 20px;
+    background: #000000;
+    border-radius: 2px;
+    position: relative;
+    user-select: none;
+}
+
+/* Handle positioning and styling */
+.link1-node .react-flow__handle {
+    width: 8px;
+    height: 8px;
+    background: #000000;
+    border: 1px solid #000000;
+    border-radius: 50%;
+}
+
+/* Top handle */
+.link1-node .react-flow__handle.react-flow__handle-top {
+    top: -4px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Bottom handle */
+.link1-node .react-flow__handle.react-flow__handle-bottom {
+    bottom: -4px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Right handle */
+.link1-node .react-flow__handle.react-flow__handle-right {
+    right: -4px;
+    top: 50%;
+    transform: translateY(-50%);
+}

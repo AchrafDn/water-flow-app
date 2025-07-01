@@ -1,0 +1,39 @@
+import React from 'react';
+import { Handle, Position } from '@xyflow/react';
+import './Link1.css';
+
+export default function Link1({ data }) {
+    return (
+        <div className="link1-node" style={{
+            width: '20px',
+            height: '20px',
+            background: '#2563eb'
+        }}>
+            {/* Input Handle (only from left) */}
+            <Handle
+                type="target"
+                position={Position.Left}
+                style={{ background: '#2563eb', border: '1px solid #2563eb' }}
+            />
+
+            <Handle
+            type="source"
+            position={Position.Top}
+            id="top"
+            style={{ background: '#2563eb', border: '1px solid #2563eb' }}
+            />
+            <Handle
+            type="source"
+            position={Position.Bottom}
+            id="bottom"
+            style={{ background: '#2563eb', border: '1px solid #2563eb' }}
+            />
+            <Handle
+            type="source"
+            position={Position.Right}
+            id="right"
+            style={{ background: '#2563eb', border: '1px solid #2563eb' }}
+            />
+        </div>
+    );
+}
