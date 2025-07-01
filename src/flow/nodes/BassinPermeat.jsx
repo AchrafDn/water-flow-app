@@ -22,11 +22,11 @@ export default function BassinPermeat({ data }) {
             <div className="node-values">
                 <div className="node-value primary">
                     <span className="value-number">{data.leftNumber}</span>
-                    <span className="value-unit">m³/h</span>
+                    <span className="value-unit">%</span>
                 </div>
                 <div className="node-value secondary">
                     <span className="value-number">{data.rightNumber}</span>
-                    <span className="value-unit">m³/h</span>
+                    <span className="value-unit">%</span>
                 </div>
             </div>
             
