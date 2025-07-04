@@ -1,11 +1,11 @@
-/* BacEau.css */
+/* EauPotable.css */
 
-.bac-eau-node {
+.eau-potable-node {
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 140px;
-    padding: 12px 16px;
+    width: 150px;
+    padding: 10px 20px;
     background: white;
     border: 2px solid #7F8185;
     border-radius: 8px;
@@ -14,11 +14,11 @@
     user-select: none;
 }
 
-.bac-eau-node:hover {
+.eau-potable-node:hover {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
 }
 
-.node-label {
+.eau-potable-node .node-label {
     font-size: 14px;
     font-weight: bold;
     color: #333;
@@ -27,104 +27,66 @@
     line-height: 1.2;
 }
 
-.node-icon {
+.eau-potable-node .node-icon {
     width: 60px;
     height: 60px;
     margin-bottom: 10px;
     object-fit: contain;
 }
 
-.node-values {
+.eau-potable-node .node-values {
     display: flex;
     flex-direction: row;
-    gap: 7px;
+    gap: 8px;
     width: 100%;
-    justify-content: center;
+    justify-content: space-between;
 }
 
-.node-value {
+.eau-potable-node .node-value {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 4px;
+    gap: 2px;
     font-size: 13px;
     font-weight: 600;
 }
 
-.value-number {
+.eau-potable-node .value-number {
     color: #2563eb;
 }
 
-.value-unit {
+.eau-potable-node .value-unit {
     color: #6b7280;
     font-size: 11px;
     font-weight: 400;
 }
 
-.node-value.primary .value-number {
+/* Color variations for different value types */
+.eau-potable-node .node-value.primary .value-number {
     color: #FF6602;
 }
 
-.node-value.secondary .value-number {
+.eau-potable-node .node-value.secondary .value-number {
     color: #2563eb;
 }
 
-.bac-eau-node-small {
-    width: 120px;
-    padding: 10px 14px;
-}
-
-.bac-eau-node-small .node-icon {
-    width: 50px;
-    height: 50px;
-}
-
-.bac-eau-node-small .node-label {
-    font-size: 12px;
-}
-
-.bac-eau-node-small .node-value {
-    font-size: 11px;
-}
-
-.bac-eau-node-medium {
-    /* Uses default styles */
-}
-
-.bac-eau-node-large {
-    width: 160px;
-    padding: 14px 18px;
-}
-
-.bac-eau-node-large .node-icon {
-    width: 70px;
-    height: 70px;
-}
-
-.bac-eau-node-large .node-label {
-    font-size: 16px;
-}
-
-.bac-eau-node-large .node-value {
-    font-size: 14px;
-}
-
+/* Responsive adjustments */
 @media (max-width: 768px) {
-    .bac-eau-node {
+    .eau-potable-node {
         width: 100px;
         padding: 10px 12px;
     }
-
-    .node-icon {
+    
+    .eau-potable-node .node-icon {
         width: 50px;
         height: 50px;
     }
-
-    .node-label {
+    
+    .eau-potable-node .node-label {
         font-size: 12px;
     }
-
-    .node-value {
+    
+    .eau-potable-node .node-value {
         font-size: 12px;
     }
 }

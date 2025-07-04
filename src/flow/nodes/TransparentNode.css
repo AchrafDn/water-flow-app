@@ -5,21 +5,39 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-family: poppins;
+    font-family: Poppins, sans-serif;
     user-select: none;
-    width: 100%; /* make node expand if needed */
+    width: 80px; /* Fixed width */
 }
 
-.number-box {
-    width: 100%;
+.transparent-node .number-box {
+    width: 80px; /* Fixed width to accommodate 10000 m³/h */
+    height: 20px; /* Fixed height */
     text-align: center;
-    font-size: 14px;
-    border-radius: 6px;
-    padding: 6px 10px;
-    margin: 2px 0;
+    font-size: 12px;
+    font-weight: 500;
+    border-radius: 1px;
+    padding: 0; /* Remove padding to prevent layout issues */
+    margin: 1px 0;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1; /* Prevent line height from affecting vertical centering */
+    white-space: nowrap; /* Prevent text wrapping */
 }
 
-.number-box.orange {
-    background-color: #A9FFFF; /* light orange background */
-    color: #4E90F0;            /* orange text */
+/* 🔵 Updated from .orange to .blue */
+.transparent-node .number-box.blue {
+    background-color: #A9FFFF; /* light blue */
+    color: #0050A0;            /* dark blue text */
+}
+
+.transparent-node .number-part {
+    font-weight: 500; /* Medium weight for numbers */
+}
+
+.transparent-node .unit-part {
+    font-weight: 300; /* Light weight for m³/h */
+    margin-left: 2px; /* 2px spacing between number and unit */
 }

@@ -1,18 +1,18 @@
 import React from 'react';
 import { Handle, Position } from '@xyflow/react';
-import StockEau from '../../assets/StockEauDeslt.svg';
-import './StockEauDeslt.css';
+import EauIcon from '../../assets/EauPotable.svg';
+import './EauPotable.css';
 
-export default function StockEauDeslt({ data }) {
+export default function EauPotable({ data }) {
     return (
-        <div className="stock-eau-deslt-node">
+        <div className="eau-potable-node">
             <div className="node-label">
                 {data.label}
             </div>
             
             <img 
-                src={StockEau} 
-                alt="Stock Deslt Icon"
+                src={EauIcon} 
+                alt="Eau Potable Icon"
                 className="node-icon"
             />
             

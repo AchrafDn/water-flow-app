@@ -1,25 +1,39 @@
-.transparent-node {
+.transparent-node2 {
     background: transparent;
     border: none;
     padding: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-family: sans-serif;
+    font-family: Poppins, sans-serif;
     user-select: none;
-    width: 100%; /* make node expand if needed */
+    width: 80px; /* Fixed width */
 }
 
-.number-box {
-    width: 100%;
+.transparent-node2 .orange-box {
+    width: 80px; /* Fixed width to accommodate 10000 m³/h */
+    height: 20px; /* Fixed height */
     text-align: center;
-    font-size: 14px;
-    border-radius: 6px;
-    padding: 8px 12px;
-    margin: 4px 0;
+    font-size: 12px;
+    font-weight: 500;
+    border-radius: 1px;
+    padding: 0; /* Remove padding to prevent layout issues */
+    margin: 1px 0;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1; /* Prevent line height from affecting vertical centering */
+    white-space: nowrap; /* Prevent text wrapping */
+background-color: #00afb8; /* Light gray (cool and modern, not too pale) */
+color: #e1fcff;           /* Dark gray for numbers/text (great contrast) */           /* very dark gray text */
 }
 
-.number-box.orange {
-    background-color: #2563eb; /* light orange background */
-    color: #ffedd5;            /* orange text */
+.transparent-node2 .number-part {
+    font-weight: 500; /* Medium weight for numbers */
+}
+
+.transparent-node2 .unit-part {
+    font-weight: 300; /* Light weight for m³/h */
+    margin-left: 2px; /* 2px spacing between number and unit */
 }

@@ -9,30 +9,43 @@ export default function Link1({ data }) {
             height: '20px',
             background: '#2563eb'
         }}>
-            {/* Input Handle (only from left) */}
+            {/* Target handles */}
             <Handle
                 type="target"
                 position={Position.Left}
+                id="left"
+                style={{ background: '#2563eb', border: '1px solid #2563eb' }}
+            />
+            <Handle
+                type="target"
+                position={Position.Top}
+                id="top-target"
                 style={{ background: '#2563eb', border: '1px solid #2563eb' }}
             />
 
             <Handle
-            type="source"
-            position={Position.Top}
-            id="top"
-            style={{ background: '#2563eb', border: '1px solid #2563eb' }}
+                type="source"
+                position={Position.Bottom}
+                id="bottom"
+                style={{ background: '#2563eb', border: '1px solid #2563eb' }}
             />
             <Handle
-            type="source"
-            position={Position.Bottom}
-            id="bottom"
-            style={{ background: '#2563eb', border: '1px solid #2563eb' }}
+                type="source"
+                position={Position.Top}
+                id="top"
+                style={{ background: '#2563eb', border: '1px solid #2563eb' }}
             />
             <Handle
-            type="source"
-            position={Position.Right}
-            id="right"
-            style={{ background: '#2563eb', border: '1px solid #2563eb' }}
+                type="source"
+                position={Position.Bottom}
+                id="bottom"
+                style={{ background: '#2563eb', border: '1px solid #2563eb' }}
+            />
+            <Handle
+                type="source"
+                position={Position.Right}
+                id="right"
+                style={{ background: '#2563eb', border: '1px solid #2563eb' }}
             />
         </div>
     );

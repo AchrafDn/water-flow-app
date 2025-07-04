@@ -7,19 +7,16 @@ export default function BacEau({ data }) {
     const sizeClass = data.size ? `bac-eau-node-${data.size}` : '';
     return (
         <div className={`bac-eau-node ${sizeClass}`}>
-            {/* Section 1: Label */}
             <div className="node-label">
                 {data.label}
             </div>
 
-            {/* Section 2: SVG/Icon */}
             <img 
                 src={BacEauIcon} 
                 alt="Bac Eau Icon"
                 className="node-icon"
             />
 
-            {/* Section 3: Two Values with Units */}
             <div className="node-values">
                 <div className="node-value primary">
                     <span className="value-number">{data.leftNumber}</span>
@@ -31,7 +28,6 @@ export default function BacEau({ data }) {
                 </div>
             </div>
 
-            {/* Handles */}
             <Handle
                 type="target"
                 position={Position.Left}
@@ -40,7 +36,7 @@ export default function BacEau({ data }) {
             <Handle
                 type="source"
                 position={Position.Right}
-                style={{ background: '#2563eb' }}
+                style={{ background: '#2563eb', top: 'calc(50% - 30px)' }}
             />
         </div>
     );
